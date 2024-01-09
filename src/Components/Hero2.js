@@ -1,38 +1,34 @@
 import React, { useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel } from 'bootstrap'; // Import the Carousel component specifically
 
 
-const Hero2 = () => {
-
-    const goToSlide = (index) => {
-        const carousel = new Carousel(document.getElementById('carouselExampleControls'));
-        carousel.to(index);
-    };
-
-    useEffect(() => {
-        const indicators = document.querySelectorAll('.custom-indicator');
-        const carousel = new Carousel(document.getElementById('carouselExampleControls'));
-
-        indicators.forEach((indicator, index) => {
+    const Hero2 = () => {
+        const goToSlide = (index) => {
+          const carousel = new window.bootstrap.Carousel(document.getElementById('carouselExampleControls'));
+          carousel.to(index);
+        };
+      
+        useEffect(() => {
+          const indicators = document.querySelectorAll('.custom-indicator');
+          const carousel = new window.bootstrap.Carousel(document.getElementById('carouselExampleControls'));
+      
+          indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', () => {
-                goToSlide(index);
+              goToSlide(index);
             });
-        });
-
-        document.getElementById('carouselExampleControls').addEventListener('slid.bs.carousel', (event) => {
+          });
+      
+          document.getElementById('carouselExampleControls').addEventListener('slid.bs.carousel', (event) => {
             const activeIndex = event.to;
-
+      
             indicators.forEach((indicator, index) => {
-                if (index === activeIndex) {
-                    indicator.classList.add('active');
-                } else {
-                    indicator.classList.remove('active');
-                }
+              if (index === activeIndex) {
+                indicator.classList.add('active');
+              } else {
+                indicator.classList.remove('active');
+              }
             });
-        });
-    }, []); // Empty dependency array ensures useEffect runs once after initial render
-
+          });
+        }, []);
     return (
         <section className="hero-2">
             <div className="container">
@@ -40,7 +36,7 @@ const Hero2 = () => {
                     <div className="col-12">
                         <div id="carouselExampleControls" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
-                                {/* First carousel item content */}
+                                
                                 <div className="carousel-item active">
                                     <div className="row align-items-center">
                                         <div className="col-md">
@@ -56,7 +52,7 @@ const Hero2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* Second carousel item content */}
+                                
                                 <div className="carousel-item">
                                     <div className="row align-items-center">
                                         <div className="col-md">
@@ -71,7 +67,7 @@ const Hero2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                {/* Third carousel item content */}
+                                
                                 <div className="carousel-item">
                                     <div className="row align-items-center">
                                         <div className="col-md">

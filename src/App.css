@@ -9,6 +9,10 @@
     --black-transparent: rgba(0, 0, 0, .2);
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 ul li a:hover {
     text-decoration: underline;
 }
@@ -18,12 +22,8 @@ ul li a:hover {
     width: 150px;
 }
 
-.lock-scroll {
-    overflow: hidden;
-}
-
 .myBreadcrumb {
-    /* background: url('Images/breadcrump-background.jpeg'); */
+    background: url('/public/Images/breadcrump-background.jpeg');
     background-color: var(--black-color);
     /* opacity: 0.5; */
     z-index: 0;
@@ -134,10 +134,19 @@ ul li a:hover {
 }
 
 
-.header-bottom {
+.header {
     width: 100%;
     background-color: var(--white-color);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    /* position: sticky;
+    top: 0; */
+    z-index: 10000;
+}
+
+.header.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 
@@ -284,7 +293,7 @@ ul li a:hover {
 }
 
 .nav__menu .dropdown>a:after {
-    /* content: url('Images/chevron-down.svg'); */
+    content: url('/public/Images/chevron-down.svg');
     /* font-family: "Font Awesome 5 Free"; */
     font-weight: 900;
     font-size: .875rem;
@@ -293,11 +302,11 @@ ul li a:hover {
 }
 
 .nav__menu .active.dropdown>a:after {
-    /* content: url('Images/chevron-up.svg'); */
+    content: url('/public/Images/chevron-up.svg');
 }
 
 .nav__menu .dropdown .dropdown>a:after {
-    /* content: url('Images/chevron-down.svg'); */
+    content: url('/public/Images/chevron-down.svg');
     /* font-family: "Font Awesome 5 Free"; */
     font-weight: 900;
     font-size: .875rem;
@@ -306,7 +315,7 @@ ul li a:hover {
 }
 
 .nav__menu .dropdown .active.dropdown>a:after {
-    /* content: url('Images/chevron-up.svg'); */
+    content: url('/public/Images/chevron-up.svg');
 }
 
 
@@ -441,7 +450,7 @@ ul li a:hover {
     }
 
     .nav__menu .dropdown>a:after {
-        /* content: url('Images/chevron-down.svg'); */
+        content: url('/public/Images/chevron-down.svg');
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: .875rem;
@@ -451,7 +460,7 @@ ul li a:hover {
 
 
     .nav__menu .dropdown:hover>a:after {
-        /* content: url('Images/chevron-up.svg'); */
+        content: url('/public/Images/chevron-up.svg');
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: .875rem;
@@ -462,7 +471,7 @@ ul li a:hover {
 
 
     .nav__menu .dropdown .dropdown>a:after {
-        /* content: url('Images/chevron-down.svg'); */
+        content: url('/public/Images/chevron-down.svg');
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: .875rem;
@@ -473,7 +482,7 @@ ul li a:hover {
 
 
     .nav__menu .dropdown .dropdown:hover>a:after {
-        /* content: url('Images/chevron-left.svg'); */
+        content: url('/public/Images/chevron-left.svg');
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: .875rem;
@@ -522,7 +531,7 @@ ul li a:hover {
 
 
 /* service css */
-#services {
+.services {
     padding: 60px 0;
 }
 
@@ -532,7 +541,7 @@ ul li a:hover {
 
 /* section-3 */
 
-#section-3 {
+.image-text {
     padding: 50px 0px;
 }
 
@@ -718,6 +727,11 @@ ul li a:hover {
     font-weight: 700;
 }
 
+.footer-img {
+    width: 220px;
+    height: 60px;
+}
+
 .text-grey {
     text-decoration: none;
     color: var(--white-color);
@@ -760,7 +774,7 @@ ul li a:hover {
 }
 
 
-.last-footer {
+.footer-bottom {
     border-top: 1px dotted var(--grey-color);
     background: var(--primary-color);
     background: linear-gradient(90deg, rgba(254, 181, 43, 1) 0%, rgba(255, 175, 0, 1) 35%, rgba(255, 141, 18, 1) 100%);
@@ -768,7 +782,7 @@ ul li a:hover {
     padding: 15px 0;
 }
 
-.copy-parent {
+.footer-copyright {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -885,9 +899,9 @@ p {
 
 }
 
-/* version 2 here css starts here  */
+/* version 2 hero css starts here  */
 
-.version-2-hero {
+.hero-2 {
     padding: 40px 0;
 }
 

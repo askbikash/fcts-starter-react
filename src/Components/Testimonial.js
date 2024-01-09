@@ -1,7 +1,4 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Carousel } from 'bootstrap';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 
@@ -29,10 +26,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -51,10 +48,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -73,10 +70,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -101,11 +98,11 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -124,10 +121,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -146,10 +143,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -173,11 +170,11 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -196,11 +193,11 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -219,11 +216,11 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -247,10 +244,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
 
                     </div>
                   </div>
@@ -270,10 +267,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
 
                     </div>
                   </div>
@@ -293,10 +290,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
 
                     </div>
                   </div>
@@ -321,10 +318,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -343,10 +340,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -365,10 +362,10 @@ const Testimonial = () => {
                         nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="ratings">
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
-                      <img src="Images/star-fill.svg" alt="" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
+                      <img src="Images/star-fill.svg" alt="Image" />
                     </div>
                   </div>
                 </div>

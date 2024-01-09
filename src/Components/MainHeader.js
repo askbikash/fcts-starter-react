@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const MainHeader = () => {
   const lockScroll = () => {
@@ -6,12 +6,10 @@ const MainHeader = () => {
   };
 
   useEffect(() => {
-    let currentPage = window.location.pathname;
+    const currentPage = window.location.pathname;
 
     // Handle the case where the current page is the homepage
-    if (currentPage === '/') {
-      currentPage = '/index.html';
-    }
+    const adjustedPage = currentPage === '/' ? '/index.html' : currentPage;
 
     const navLinks = document.querySelectorAll('.nav__menu a');
 
@@ -19,7 +17,7 @@ const MainHeader = () => {
       const link = navLinks[i];
 
       // Check for partial match
-      if (currentPage.indexOf(link.getAttribute('href')) !== -1) {
+      if (adjustedPage.indexOf(link.getAttribute('href')) !== -1) {
         link.parentElement.classList.add('active');
       }
     }
@@ -79,8 +77,34 @@ const MainHeader = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const header = document.querySelector('.header');
+    const headerTop = document.querySelector('.header-top');
+
+    const headerTopHeight = headerTop.offsetHeight;
+
+    function updateHeader() {
+      if (window.scrollY >= headerTopHeight) {
+        header.classList.add('fixed-top');
+      } else {
+        header.classList.remove('fixed-top');
+      }
+    }
+
+    // Initial update
+    updateHeader();
+
+    // Listen for scroll events
+    window.addEventListener('scroll', updateHeader);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', updateHeader);
+    };
+  }, []);
+
   return (
-    <header className="header-bottom sticky-top">
+    <header className="header fixed-top">
       <div className="container">
         <div className="nav__container">
           <div className="nav__mobile">
@@ -104,41 +128,41 @@ const MainHeader = () => {
           <nav className="menu-toggle">
             <ul className="nav__menu">
               <li>
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="aboutUs.html">About Us</a>
+                <a href="#">About Us</a>
               </li>
               <li className="dropdown">
                 <a href="#">Services</a>
                 <ul>
                   <li>
-                    <a href="services.html">Service 1</a>
+                    <a href="#">Service 1</a>
                   </li>
                   <li>
-                    <a href="services.html">Service 2</a>
+                    <a href="#">Service 2</a>
                   </li>
                   <li>
-                    <a href="services.html">Service 3</a>
+                    <a href="#">Service 3</a>
                   </li>
                   <li className="dropdown second-level">
                     <a href="#">Service 4</a>
                     <ul>
                       <li>
-                        <a href="services.html">Service 4.1</a>
+                        <a href="#">Service 4.1</a>
                       </li>
                       <li>
-                        <a href="services.html">Service 4.2</a>
+                        <a href="#">Service 4.2</a>
                       </li>
                       <li>
-                        <a href="services.html">Service 4.3</a>
+                        <a href="#">Service 4.3</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="contactUs.html">Contact Us</a>
+                <a href="#">Contact Us</a>
               </li>
             </ul>
           </nav>
