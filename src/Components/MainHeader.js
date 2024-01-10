@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const MainHeader = () => {
   const lockScroll = () => {
@@ -128,10 +129,10 @@ const MainHeader = () => {
           <nav className="menu-toggle">
             <ul className="nav__menu">
               <li>
-                <a href="/">Home</a>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <a href="AboutUs">About Us</a>
+                <NavLink to="/AboutUs">About Us</NavLink>
               </li>
               <li className="dropdown">
                 <a href="#">Services</a>
@@ -162,7 +163,7 @@ const MainHeader = () => {
                 </ul>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <NavLink to="/ContactUs">Contact Us</NavLink>
               </li>
             </ul>
           </nav>
