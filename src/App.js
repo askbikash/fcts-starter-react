@@ -1,27 +1,16 @@
+import AboutUs from './AboutUs';
 import './App.css';
-import Header from './Components/Header';
-import Hero from './Components/Hero';
-import MainHeader from './Components/MainHeader';
-import Service from './Components/Service';
-import LeftRightSection from './Components/LeftRightSection';
-import Testimonial from './Components/Testimonial';
-import Hero2 from './Components/Hero2';
-import Contact from './Components/Contact';
-import Footer from './Components/Footer';
+import Home from './Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <MainHeader/>
-      <Hero/>
-      <Service/>
-      <LeftRightSection/>
-      <Testimonial/>
-      <Hero2/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/aboutus" element={<AboutUs/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

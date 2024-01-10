@@ -131,7 +131,7 @@ const MainHeader = () => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">About Us</a>
+                <a href="AboutUs">About Us</a>
               </li>
               <li className="dropdown">
                 <a href="#">Services</a>
