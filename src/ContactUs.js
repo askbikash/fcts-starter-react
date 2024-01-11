@@ -4,7 +4,7 @@ import MainHeader from './Components/MainHeader'
 
 const ContactUs = () => {
     return (
-        <div className="AboutUs">
+        <div>
             <Header />
             <MainHeader />
         </div>
