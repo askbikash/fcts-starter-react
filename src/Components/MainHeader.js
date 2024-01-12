@@ -92,17 +92,17 @@ const MainHeader = () => {
       }
     }
 
-    // Initial update
-    updateHeader();
+      // Initial update
+      updateHeader();
 
-    // Listen for scroll events
-    window.addEventListener('scroll', updateHeader);
+      // Listen for scroll events
+      window.addEventListener('scroll', updateHeader);
 
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener('scroll', updateHeader);
-    };
-  }, []);
+      // Cleanup event listener on component unmount
+      return () => {
+        window.removeEventListener('scroll', updateHeader);
+      };
+    }, []);
 
   return (
     <header className="header fixed-top">
@@ -134,30 +134,16 @@ const MainHeader = () => {
               <li>
                 <NavLink to="/AboutUs">About Us</NavLink>
               </li>
-              <li className="dropdown">
-                <a href="#">Services</a>
+              <li class="dropdown"><a href="#">Services</a>
                 <ul>
-                  <li>
-                    <NavLink to="/Services">Service 1</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/Services">Service 2</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/Services">Service 3</NavLink>
-                  </li>
-                  <li className="dropdown second-level">
-                    <NavLink to="/Services">Service 4</NavLink>
+                  <li><a href="/Services">Service 1</a></li>
+                  <li><a href="/Services">Service 2</a></li>
+                  <li><a href="/Services">Service 3</a></li>
+                  <li class="dropdown second-level"><a href="#">Service 4</a>
                     <ul>
-                      <li>
-                        <NavLink to="/Services">Service 4.1</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/Services">Service 4.2</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/Services">Service 4.3</NavLink>
-                      </li>
+                      <li><a href="/Services">Service 4.1</a></li>
+                      <li><a href="/Services">Service 4.2</a></li>
+                      <li><a href="/Services">Service 4.3</a></li>
                     </ul>
                   </li>
                 </ul>
