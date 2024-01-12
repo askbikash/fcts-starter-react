@@ -1,8 +1,17 @@
 import React from 'react'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const Testimonial = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 150,
+      duration: 1000
+    });
+  }, []);
   return (
     <section id="testimonials" className="testimonials pt-0 mt-0">
       <div className="container mt-5 mb-5 overflow-hidden" data-aos="zoom-in-down">

@@ -1,6 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Service = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+    }, []);
     return (
         <section id="services" className="section-2">
             <div className="container overflow-hidden">
@@ -182,12 +193,12 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="text-center pt-5 mb-5">
-                    <a href="services.html" className="btn btn-warning">
+                    <NavLink className="btn btn-warning" to="/Services">
                         Read More..
-                    </a>
+                    </NavLink>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

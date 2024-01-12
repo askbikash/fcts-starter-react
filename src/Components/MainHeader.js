@@ -110,9 +110,9 @@ const MainHeader = () => {
         <div className="nav__container">
           <div className="nav__mobile">
             <div className="nav__logo">
-              <a href="index.html">
+              <NavLink to="/">
                 <img src="Images/forwardcode_logo.png" alt="logo" />
-              </a>
+              </NavLink>
             </div>
             <div className="nav__btn" onClick={lockScroll}>
               <a
@@ -138,25 +138,25 @@ const MainHeader = () => {
                 <a href="#">Services</a>
                 <ul>
                   <li>
-                    <a href="#">Service 1</a>
+                    <NavLink to="/Services">Service 1</NavLink>
                   </li>
                   <li>
-                    <a href="#">Service 2</a>
+                    <NavLink to="/Services">Service 2</NavLink>
                   </li>
                   <li>
-                    <a href="#">Service 3</a>
+                    <NavLink to="/Services">Service 3</NavLink>
                   </li>
                   <li className="dropdown second-level">
-                    <a href="#">Service 4</a>
+                    <NavLink to="/Services">Service 4</NavLink>
                     <ul>
                       <li>
-                        <a href="#">Service 4.1</a>
+                        <NavLink to="/Services">Service 4.1</NavLink>
                       </li>
                       <li>
-                        <a href="#">Service 4.2</a>
+                        <NavLink to="/Services">Service 4.2</NavLink>
                       </li>
                       <li>
-                        <a href="#">Service 4.3</a>
+                        <NavLink to="/Services">Service 4.3</NavLink>
                       </li>
                     </ul>
                   </li>
@@ -169,7 +169,7 @@ const MainHeader = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 

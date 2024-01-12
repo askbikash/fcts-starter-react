@@ -1,34 +1,44 @@
 import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
-    const Hero2 = () => {
-        const goToSlide = (index) => {
-          const carousel = new window.bootstrap.Carousel(document.getElementById('carouselExampleControls'));
-          carousel.to(index);
-        };
-      
-        useEffect(() => {
-          const indicators = document.querySelectorAll('.custom-indicator');
-          const carousel = new window.bootstrap.Carousel(document.getElementById('carouselExampleControls'));
-      
-          indicators.forEach((indicator, index) => {
+
+const Hero2 = () => {
+    const goToSlide = (index) => {
+        const carousel = new window.bootstrap.Carousel(document.getElementById('carouselExampleControls'));
+        carousel.to(index);
+    };
+
+    useEffect(() => {
+        const indicators = document.querySelectorAll('.custom-indicator');
+        const carousel = new window.bootstrap.Carousel(document.getElementById('carouselExampleControls'));
+
+        indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', () => {
-              goToSlide(index);
+                goToSlide(index);
             });
-          });
-      
-          document.getElementById('carouselExampleControls').addEventListener('slid.bs.carousel', (event) => {
+        });
+
+        document.getElementById('carouselExampleControls').addEventListener('slid.bs.carousel', (event) => {
             const activeIndex = event.to;
-      
+
             indicators.forEach((indicator, index) => {
-              if (index === activeIndex) {
-                indicator.classList.add('active');
-              } else {
-                indicator.classList.remove('active');
-              }
+                if (index === activeIndex) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
             });
-          });
-        }, []);
+        });
+    }, []);
+
+    useEffect(() => {
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+    }, []);
     return (
         <section className="hero-2">
             <div className="container">
@@ -36,7 +46,7 @@ import React, { useEffect } from 'react';
                     <div className="col-12">
                         <div id="carouselExampleControls" className="carousel slide carousel-fade" data-bs-ride="carousel">
                             <div className="carousel-inner">
-                                
+
                                 <div className="carousel-item active">
                                     <div className="row align-items-center">
                                         <div className="col-md">
@@ -52,7 +62,7 @@ import React, { useEffect } from 'react';
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="carousel-item">
                                     <div className="row align-items-center">
                                         <div className="col-md">
@@ -67,7 +77,7 @@ import React, { useEffect } from 'react';
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <div className="carousel-item">
                                     <div className="row align-items-center">
                                         <div className="col-md">

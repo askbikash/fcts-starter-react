@@ -1,6 +1,16 @@
 import React from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const ServicesSection = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 150,
+      duration: 1000
+    });
+  }, []);
   return (
     <section id="section-3">
       <div className="container overflow-hidden mb-5">

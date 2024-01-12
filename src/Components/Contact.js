@@ -1,6 +1,16 @@
 import React from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Contact = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+    }, []);
     return (
         <section className="contact" data-aos="fade-up">
             <div className="container py-4">

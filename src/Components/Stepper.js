@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Stepper = () => {
     const [activeStep, setActiveStep] = useState(0);
@@ -6,6 +9,13 @@ const Stepper = () => {
     const handleStepClick = (index) => {
         setActiveStep(index);
     };
+
+    useEffect(() => {
+        AOS.init({
+            offset: 150,
+            duration: 1000
+        });
+    }, []);
 
     return (
         <section className="journey">
