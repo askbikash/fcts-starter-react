@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 
 const MainHeader = () => {
   const lockScroll = () => {
+    console.log('lockScroll function is called');
     document.body.classList.toggle('lock-scroll');
   };
 
@@ -118,7 +119,6 @@ const MainHeader = () => {
               <a
                 aria-label="Mobile menu"
                 className="nav-toggle"
-                onClick={lockScroll}
               >
                 <span></span>
                 <span className="mrg"></span>
