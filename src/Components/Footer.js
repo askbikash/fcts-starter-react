@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-12">
-              <a href="index.html">
+              <a href="/">
                 <img width="100" height="100" src="Images/forwardcode_logo.png" className="footer-img mb-2" alt="Logo" />
               </a>
               <p className="footer-address">

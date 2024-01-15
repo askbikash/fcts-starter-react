@@ -76,6 +76,7 @@ ul li a:hover {
     }
 
     .d-block {
+        width: 100%;
         height: 260px;
         object-fit: cover;
     }
