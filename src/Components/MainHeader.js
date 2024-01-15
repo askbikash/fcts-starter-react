@@ -1,27 +1,27 @@
 import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const MainHeader = () => {
   const lockScroll = () => {
     document.body.classList.toggle('lock-scroll');
   };
 
+  const location = useLocation();
+
   useEffect(() => {
-    const currentPage = window.location.pathname;
-
-    // Handle the case where the current page is the homepage
-    const adjustedPage = currentPage === '/' ? '/index.html' : currentPage;
-
     const navLinks = document.querySelectorAll('.nav__menu a');
 
-    for (let i = 0; i < navLinks.length; i++) {
-      const link = navLinks[i];
-
-      // Check for partial match
-      if (adjustedPage.indexOf(link.getAttribute('href')) !== -1) {
+    navLinks.forEach((link) => {
+      // Check for exact match in a case-sensitive manner
+      if (location.pathname === link.getAttribute('href')) {
         link.parentElement.classList.add('active');
+      } else {
+        link.parentElement.classList.remove('active');
       }
-    }
+    });
+  }, [location.pathname]);
+
+  useEffect(() => {
 
     // Prevent showing animation on window resize
     let resizeTimer;
@@ -92,17 +92,17 @@ const MainHeader = () => {
       }
     }
 
-      // Initial update
-      updateHeader();
+    // Initial update
+    updateHeader();
 
-      // Listen for scroll events
-      window.addEventListener('scroll', updateHeader);
+    // Listen for scroll events
+    window.addEventListener('scroll', updateHeader);
 
-      // Cleanup event listener on component unmount
-      return () => {
-        window.removeEventListener('scroll', updateHeader);
-      };
-    }, []);
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', updateHeader);
+    };
+  }, []);
 
   return (
     <header className="header fixed-top">
@@ -129,33 +129,35 @@ const MainHeader = () => {
           <nav className="menu-toggle">
             <ul className="nav__menu">
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink exact to="/" activeClassName="active">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/AboutUs">About Us</NavLink>
+                <NavLink to="/AboutUs" activeClassName="active">About Us</NavLink>
               </li>
-              <li class="dropdown"><a href="#">Services</a>
+              <li className="dropdown">
+                <a href="#">Services</a>
                 <ul>
-                  <li><a href="/Services">Service 1</a></li>
-                  <li><a href="/Services">Service 2</a></li>
-                  <li><a href="/Services">Service 3</a></li>
-                  <li class="dropdown second-level"><a href="#">Service 4</a>
+                  <li><NavLink to="/Services" activeClassName="active">Service 1</NavLink></li>
+                  <li><NavLink to="/Services" activeClassName="active">Service 2</NavLink></li>
+                  <li><NavLink to="/Services" activeClassName="active">Service 3</NavLink></li>
+                  <li className="dropdown second-level">
+                    <a href="#">Service 4</a>
                     <ul>
-                      <li><a href="/Services">Service 4.1</a></li>
-                      <li><a href="/Services">Service 4.2</a></li>
-                      <li><a href="/Services">Service 4.3</a></li>
+                      <li><NavLink to="/Services" activeClassName="active">Service 4.1</NavLink></li>
+                      <li><NavLink to="/Services" activeClassName="active">Service 4.2</NavLink></li>
+                      <li><NavLink to="/Services" activeClassName="active">Service 4.3</NavLink></li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li>
-                <NavLink to="/ContactUs">Contact Us</NavLink>
+                <NavLink to="/ContactUs" activeClassName="active">Contact Us</NavLink>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-    </header >
+    </header>
   );
 };
 
