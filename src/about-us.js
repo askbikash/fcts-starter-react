@@ -8,7 +8,7 @@ import OurTeam from './Components/OurTeam'
 import LeftRightSection from './Components/LeftRightSection'
 import Footer from './Components/Footer'
 
-const AboutUs = () => {
+const aboutus = () => {
     return (
         <div className="AboutUs">
             <Header />
@@ -19,10 +19,10 @@ const AboutUs = () => {
             </div>
             <Stepper />
             <OurTeam />
-            <LeftRightSection/>
-            <Footer/>
+            <LeftRightSection />
+            <Footer />
         </div>
     )
 }
 
-export default AboutUs
+export default aboutus

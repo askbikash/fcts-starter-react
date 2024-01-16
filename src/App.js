@@ -1,8 +1,8 @@
-import AboutUs from './AboutUs';
+import AboutUs from './about-us';
 import './App.css';
-import ContactUs from './ContactUs';
+import ContactUs from './contact-us';
 import Home from './Home';
-import Services from './Services';
+import Services from './services';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/aboutus" element={<AboutUs/>}/>
-        <Route path="/contactus" element={<ContactUs/>}/>
-        <Route path="/Services" element={<Services/>}/>
+        <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/contact-us" element={<ContactUs/>}/>
+        <Route path="/services" element={<Services/>}/>
       </Routes>
     </BrowserRouter>
   );

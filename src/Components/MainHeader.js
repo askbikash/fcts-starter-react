@@ -132,7 +132,7 @@ const MainHeader = () => {
                 <NavLink exact to="/" activeClassName="active">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/AboutUs" activeClassName="active">About Us</NavLink>
+                <NavLink to="/about-us" activeClassName="active">About Us</NavLink>
               </li>
               <li className="dropdown">
                 <a href="#">Services</a>
@@ -151,7 +151,7 @@ const MainHeader = () => {
                 </ul>
               </li>
               <li>
-                <NavLink to="/ContactUs" activeClassName="active">Contact Us</NavLink>
+                <NavLink to="/contact-us" activeClassName="active">Contact Us</NavLink>
               </li>
             </ul>
           </nav>

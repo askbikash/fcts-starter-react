@@ -5,7 +5,7 @@ import ContactPageSection from './Components/ContactPageSection'
 import Footer from './Components/Footer'
 import BreadcrumpContactUs from './Components/BreadcrumpContactUs'
 
-const ContactUs = () => {
+const contactus = () => {
     return (
         <div>
             <Header />
@@ -19,4 +19,4 @@ const ContactUs = () => {
     )
 }
 
-export default ContactUs
+export default contactus
