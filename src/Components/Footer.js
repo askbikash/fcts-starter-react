@@ -38,9 +38,9 @@ const Footer = () => {
               <hr />
               <ul className="footer-ul">
                 <li className="footer-li"> <NavLink to="/">Home</NavLink></li>
-                <li className="footer-li"> <NavLink to="/AboutUs">About Us</NavLink></li>
-                <li className="footer-li"> <NavLink to="/Services">Services</NavLink></li>
-                <li className="footer-li"> <NavLink to="/ContactUs">Contact Us</NavLink></li>
+                <li className="footer-li"> <NavLink to="/about-us">About Us</NavLink></li>
+                <li className="footer-li"> <NavLink to="/services">Services</NavLink></li>
+                <li className="footer-li"> <NavLink to="/contact-us">Contact Us</NavLink></li>
               </ul>
             </div>
             <div className="col-lg-4 col-12">
